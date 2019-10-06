@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
 		<header>
 			<img src="#" alt="Logo">
 			<nav>
 				<ul>
-					<li><a href="Catalog.html">Каталог</a>
+					<li><a href="Catalog.html">Каталог</a> <!-- <select>? -->
 					<ul>
 						<li>
 							<a href="#">Новинки</a>
@@ -34,13 +34,18 @@
 				</ul>
 			</nav>
 			<div>
-				<input type="search" name="#">
+				<input type="search" required placeholder="Крем-брюле">
 			</div>
 			<div>
 				<a href="#">Вход</a>
+				<p><input type="email" name="email" required placeholder="email@example.com"></p>
+				<p><input type="password" name="password" required placeholder="••••••••"></p>
+				<p><button>Войти</button></p>
+				<p><a href="#">Забыли пароль?</a></p>
+				<p><a href="#">Новая регистрация</a></p>
 			</div>
 			<div>
-				<!--Корзина-->
+				<a href="#">Пусто</a>
 			</div>
 			<div>
 				<p>С 10 до 20, ежедневно</p>
@@ -48,15 +53,46 @@
 			</div>
 		</header>
 		<main>
+			<button>Давайте оба!</button>
+			<section>
+				<dl>
+					<dt><strong>Малинка даром!</strong></dt>
+					<dd>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</dd>
+				</dl>
+				<button>Хочу варенье!</button>
+			</section>
+			<section>
+				<dl>
+					<dt><strong>Шоколадки даром!</strong></dt>
+					<dd>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</dd>
+				</dl>
+				<button>Хочу шоколадки!</button>
+			</section>
+			<section>
+				<img src="#" alt="1">
+				<p>310<span>₽/кг</span></p>
+				<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+			</section>
+			<section>
+				<img src="#" alt="2">
+				<p>380<span>₽/кг</span></p>
+				<p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+			</section>
+			<section>
+				<img src="#" alt="3">
+				<p>355<span>₽/кг</span></p>
+				<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+			</section>
+			<section>
+				<img src="#" alt="4">
+				<p>415<span>₽/кг</span></p>
+				<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+			</section>
 			<section>
 				<h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
-				<img src="#" alt="Мороженко">
 				<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-				<img src="#" alt="Листик">
 				<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-				<img src="#" alt="Корова">
 				<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-				<img src="#" alt="Градусник">
 				<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 			</section>
 			<article>
@@ -65,26 +101,45 @@
 			</article>
 			<section>
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<input value="email@example.com"/>
+				<input type="email" name="email" required placeholder="email@example.com">
+				<button>Отправить</button>
 			</section>
+			<div><!--Карта--></div>
+			<article>
+				<p>Адрес главного офиса и офлайн-магазина:</p>
+				<p><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></p>
+				<p>Для заказов по телефону:</p>
+				<p><strong>8 812 450-25-25</strong></p>
+				<p>(с 10 до 20 ежедневно)</p>
+				<button>Форма обратной связи</button>
+					<div>
+						<p>Мы обязательно вам ответим!</p>
+						<p><input type="text" required placeholder="Имя Фамилия"></p>
+						<p><input type="email" name="email" required placeholder="email@example.com"></p>
+						<textarea required placeholder="В свободной форме"></textarea>
+						<button>Отправить</button>
+					</div>
+			</article>
+
+			<!-- ФОН -->
+
 		</main>
 		<footer>
 			<section>
-				<a href="#"><img src="#" alt="Тветер"></a>
-				<a href="#"><img src="#" alt="Инста"></a>
-				<a href="#"><img src="#" alt="ФБ"></a>
-				<a href="#"><img src="#" alt="ВК"></a>
+				<a href="#">Тветер</a>
+				<a href="#">Инста</a>
+				<a href="#">ФБ</a>
+				<a href="#">ВК</a>
 			</section>
 			<section>
-				<img src="#" alt="Сердце">
 				<a href="#">Для поставщиков</a>
-				<a href="#е">О производстве</a>
+				<a href="#">О производстве</a>
 				<a href="#">Наши документы</a>
 				<a href="#">Экологические стандарты</a>
 			</section>
 			<section>
 				<img src="#" alt="logo-htmlacademy-small">
-				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>© 2019</p>
+				<address>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2019</address>
 			</section>
 		</footer>
 
