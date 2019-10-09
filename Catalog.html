@@ -10,7 +10,7 @@
 			<img src="img/svg-gllacy/logo.svg" alt="Глэйси">
 			<nav>
 				<ul>
-					<li><a href="Catalog.html">Каталог</a>
+					<li><a href="catalog.html">Каталог</a>
 					<ul>
 						<li>
 							<a href="#">Новинки</a>
@@ -69,11 +69,11 @@
 			<div><!--Начало сортировки-->
 			<div>
 				<p>Сортировка:</p>
-				<select>
-					<option>по популярности</option>
-					<option>сначала недорогие</option>
-					<option>сначала дорогие</option>
-					<option>по жирности</option>
+				<select name="sorting">
+					<option value="popular">по популярности</option>
+					<option value="cheap">сначала недорогие</option>
+					<option value="expensive">сначала дорогие</option>
+					<option value="fat">по жирности</option>
 				</select>		
 			</div>
 			<div>
@@ -83,10 +83,10 @@
 			<div>
 				<fieldset>
 					<legend>Жирность:</legend>
-					<input type="checkbox" name="0%">0%
-					<input type="checkbox" name=">10%">до 10%
-					<input type="checkbox" name=">30%">до 30%		<!--дивы?-->
-					<input type="checkbox" name="<30%">выше 30%
+					<input type="radio" name="fat" value="0%">0%
+					<input type="radio" name="fat" value=">10%" checked>до 10%
+					<input type="radio" name="fat" value=">30%">до 30%		<!--дивы?-->
+					<input type="radio" name="fat" value="<30%">выше 30%
 				</fieldset>
 			</div>
 			<div>
@@ -104,80 +104,80 @@
 			</div>
 			</div><!--Конец сортировки-->
 		<section>
-			<img src="img/Catalog/01/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+			<img src="img/catalog/01/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 			<p>310<span>₽/кг</span></p>
 			<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		<section>
-			<img src="img/Catalog/01/2.png" alt="Сливочно-кофейное с кусочками шоколада">
+			<img src="img/catalog/01/2.png" alt="Сливочно-кофейное с кусочками шоколада">
 			<p>380<span>₽/кг</span></p>
 			<p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		<section>
-			<img src="img/Catalog/01/3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+			<img src="img/catalog/01/3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 			<p>355<span>₽/кг</span></p>
 			<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		<section>
-			<img src="img/Catalog/01/4.png" alt="Сливочное крем-брюле с карамельной подливкой">
+			<img src="img/catalog/01/4.png" alt="Сливочное крем-брюле с карамельной подливкой">
 			<p>415<span>₽/кг</span></p>
 			<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 			<section>
-			<img src="img/Catalog/02/1.png" alt="Сливочное с брусничным джемом">
+			<img src="img/catalog/02/1.png" alt="Сливочное с брусничным джемом">
 			<p>325<span>₽/кг</span></p>
 			<p><a href="#">Сливочное с брусничным джемом</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		</section>
 			<section>
-			<img src="img/Catalog/02/2.png" alt="Сливочно-черничное с цельными ягодами черники">
+			<img src="img/catalog/02/2.png" alt="Сливочно-черничное с цельными ягодами черники">
 			<p>410<span>₽/кг</span></p>
 			<p><a href="#">Сливочно-черничное с цельными ягодами черники</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		</section>
 			<section>
-			<img src="img/Catalog/02/3.png" alt="Сливочно-лимонное с карамельной присыпкой">
+			<img src="img/catalog/02/3.png" alt="Сливочно-лимонное с карамельной присыпкой">
 			<p>375<span>₽/кг</span></p>
 			<p><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		</section>
 			<section>
-			<img src="img/Catalog/02/4.png" alt="Сливочное с шоколадной стружкой">
+			<img src="img/catalog/02/4.png" alt="Сливочное с шоколадной стружкой">
 			<p>320<span>₽/кг</span></p>
 			<p><a href="#">Сливочное с шоколадной стружкой</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		</section>
 			<section>
-			<img src="img/Catalog/03/1.png" alt="Сливочно-ванильное с кусочками шоколада">
+			<img src="img/catalog/03/1.png" alt="Сливочно-ванильное с кусочками шоколада">
 			<p>440<span>₽/кг</span></p>
 			<p><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		</section>
 			<section>
-			<img src="img/Catalog/03/2.png" alt="Сливочноe с ментоловым сиропом">
+			<img src="img/catalog/03/2.png" alt="Сливочноe с ментоловым сиропом">
 			<p>435<span>₽/кг</span></p>
 			<p><a href="#">Сливочноe с ментоловым сиропом</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		</section>
 			<section>
-			<img src="img/Catalog/03/3.png" alt="Сливочное с кусочками черного шоколада">
+			<img src="img/catalog/03/3.png" alt="Сливочное с кусочками черного шоколада">
 			<p>355<span>₽/кг</span></p>
 			<p><a href="#">Сливочное с кусочками черного шоколада</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
 		</section>
 			<section>
-			<img src="img/Catalog/03/4.png" alt="Сливочное с мятным сиропом">
+			<img src="img/catalog/03/4.png" alt="Сливочное с мятным сиропом">
 			<p>420<span>₽/кг</span></p>
 			<p><a href="#">Сливочное с мятным сиропом</a></p>
 			<button>Быстрый просмотр</button>
@@ -200,8 +200,8 @@
 				<a href="#">Экологические стандарты</a>
 			</section>
 			<section>
-				<img src="#" alt="logo-htmlacademy-small">
-				<address>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>© 2019</address>
+				<img src="img/svg-gllacy/logo-htmlacademy.svg" alt="HTMLAcademy">
+				<address>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> &copy; 2019</address>
 			</section>		
 	</footer>
 </body>
