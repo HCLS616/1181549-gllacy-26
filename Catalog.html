@@ -34,22 +34,64 @@
 				</ul>
 			</nav>
 			<div>
-				<input type="search" required placeholder="Крем-брюле">
+				<a href="#">Поиск</a>
+				<div>
+				<form action="#" name="headerSearchForm" method="get">
+					<label for="headSearch">Поиск</label>
+					<input type="search" id="headSearch" name="headerSearchInput" required placeholder="Что ищем?">
+				</form>
+				</div>
 			</div>
 			<div>
 				<a href="#">Вход</a>
-				<p><input type="email" name="email" required placeholder="email@example.com"></p>
-				<p><input type="password" name="password" required placeholder="••••••••"></p>
-				<p><button>Войти</button></p>
-				<p><a href="#">Забыли пароль?</a></p>
-				<p><a href="#">Новая регистрация</a></p>
+				<div>
+					<form action="#" name="registration" method="get">
+					<p><input type="email" name="email" required placeholder="email@example.com"></p>
+					<p><input type="password" name="password" required placeholder="••••••••"></p>
+					<p><input type="submit" name="inputSubmitEmail" value="Войти"></p>
+					</form>
+					<div>
+					<p><a href="#">Забыли пароль?</a></p>
+					<p><a href="#">Новая регистрация</a></p>
+					</div>
+				</div>
 			</div>
 			<div>
-				<a href="#">2 товара</a>
+				<a href="#">Пусто</a>
 				<div>
-					<!--???таблица-списки-дивы???-->
-					<div>Итого: 750 руб.</div> 					<!--???-->
-					<button>Оформить заказ</button>
+				<form action="#" name="basketForm" method="post">
+					<div><!--Первый Товар-->
+						<button><!--Кнопка отмены?--></button>
+						<div>
+							<img src="img/index/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+							<a href="#">Пломбир с апельсиновым джемом</a>
+						</div>
+						<div>
+							1,5 кг х <span>200 руб.</span>
+						</div>
+						<div>
+							300 руб.
+						</div>
+					</div>
+					<div><!--Второй Товар-->
+						<button><!--Кнопка отмены?--></button>
+						<div>
+							<img src="img/index/3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+							<a href="#">Пломбир с апельсиновым джемом</a>
+						</div>
+						<div>
+							1,5 кг х <span>300 руб.</span>
+						</div>
+						<div>
+							450 руб.
+						</div>
+					</div>
+					</div>
+					<div>
+						Итого: 750 руб. <!--2 div?-->
+					</div>
+					<p><input type="submit" name="inputSubmitBasket" value="Оформить заказ"></p>
+				</form>
 				</div>
 			</div>
 			<div>
@@ -182,10 +224,29 @@
 			<p><a href="#">Сливочное с мятным сиропом</a></p>
 			<button>Быстрый просмотр</button>
 		</section>
-
-		<!-- ПЕРЕЛИСТОВАНИЕ СТРАНИЦ &&& Упорядоченный список??? -->
-		
-	</main>
+		<div> <!--Номера Страниц-->
+			<ul>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">&gt</a>
+				</li>
+			</ul>
+		</div>
+		</main>
 	<footer>
 			<section>
 				<a href="#">Тветер</a>

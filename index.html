@@ -10,7 +10,7 @@
 			<img src="img/svg-gllacy/logo.svg" alt="Глэйси">
 			<nav>
 				<ul>
-					<li><a href="catalog.html">Каталог</a> <!-- <select>? -->
+					<li><a href="catalog.html">Каталог</a>
 					<ul>
 						<li>
 							<a href="#">Новинки</a>
@@ -34,18 +34,35 @@
 				</ul>
 			</nav>
 			<div>
-				<input type="search" required placeholder="Крем-брюле">
+				<a href="#">Поиск</a>
+				<div>
+				<form action="#" name="headerSearchForm" method="get">
+					<label for="headSearch">Поиск</label>
+					<input type="search" id="headSearch" name="headerSearchInput" required placeholder="Что ищем?">
+				</form>
+				</div>
 			</div>
 			<div>
 				<a href="#">Вход</a>
-				<p><input type="email" name="email" required placeholder="email@example.com"></p>
-				<p><input type="password" name="password" required placeholder="••••••••"></p>
-				<p><button>Войти</button></p>
-				<p><a href="#">Забыли пароль?</a></p>
-				<p><a href="#">Новая регистрация</a></p>
+				<div>
+					<form action="#" name="registration" method="get">
+					<p><input type="email" name="email" required placeholder="email@example.com"></p>
+					<p><input type="password" name="password" required placeholder="••••••••"></p>
+					<p><input type="submit" name="inputSubmitEmail" value="Войти"></p>
+					</form>
+					<div>
+					<p><a href="#">Забыли пароль?</a></p>
+					<p><a href="#">Новая регистрация</a></p>
+					</div>
+				</div>
 			</div>
 			<div>
 				<a href="#">Пусто</a>
+				<div>
+				<form action="#" name="basketForm" method="post">
+					<!--корзина-->
+				</form>
+				</div>
 			</div>
 			<div>
 				<p>С 10 до 20, ежедневно</p>
@@ -54,6 +71,11 @@
 		</header>
 		<main>
 			<a href="#">Давайте оба!</a>
+			<div> <!--ФОН-->
+				<input type="radio" name="background" value="bg_1" checked>
+				<input type="radio" name="background" value="bg_2">
+				<input type="radio" name="background" value="bg_3">
+			</div>
 			<section>
 				<dl>
 					<dt><strong>Малинка даром!</strong></dt>
@@ -72,21 +94,25 @@
 				<img src="img/index/1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 				<p>310<span>₽/кг</span></p>
 				<p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+				<button>Быстрый просмотр</button>
 			</section>
 			<section>
 				<img src="img/index/2.png" alt="Сливочно-кофейное с кусочками шоколада">
 				<p>380<span>₽/кг</span></p>
 				<p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+				<button>Быстрый просмотр</button>
 			</section>
 			<section>
 				<img src="img/index/3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 				<p>355<span>₽/кг</span></p>
 				<p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+				<button>Быстрый просмотр</button>
 			</section>
 			<section>
 				<img src="img/index/4.png" alt="Сливочное крем-брюле с карамельной подливкой">
 				<p>415<span>₽/кг</span></p>
 				<p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+				<button>Быстрый просмотр</button>
 			</section>
 			<section>
 				<h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
@@ -101,23 +127,34 @@
 			</article>
 			<section>
 				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<input type="email" name="email" required placeholder="email@example.com">
-				<button>Отправить</button>
+				<div>
+					<form action="#" name="distributionForm" method="get">
+						<input type="email" name="distributionEmail" required placeholder="email@example.com">
+						<input type="submit" name="distributionInput" value="Отправить">
+					</form>
+				</div>
 			</section>
-			<div><!--Карта--></div>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6134129460256!2d30.32057831567722!3d59.938556769067816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9b0c6fd%3A0x5305c517be3d8ef2!2z0JLQvtC70YvQvdGB0LrQuNC5INC_0LXRgC4sIDgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1570994214058!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen></iframe>
+				<div>
+					<a href="#"><img src="img/svg-gllacy/pin.svg"></a>
+				</div>
+			</div>
 			<article>
 				<p>Адрес главного офиса и офлайн-магазина:</p>
 				<address><strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong></address>
 				<p>Для заказов по телефону:</p>
 				<p><strong>8 812 450-25-25</strong></p>
 				<p>(с 10 до 20 ежедневно)</p>
-				<button>Форма обратной связи</button>
+				<a href="">Форма обратной связи</a>
 					<div>
+						<form action="#" name="feedbackForm" method="post">
 						<p>Мы обязательно вам ответим!</p>
 						<p><input type="text" required placeholder="Имя Фамилия"></p>
-						<p><input type="email" name="email" required placeholder="email@example.com"></p>
+						<p><input type="email" name="feedbackEmail" required placeholder="email@example.com"></p>
 						<textarea required placeholder="В свободной форме"></textarea>
-						<button>Отправить</button>
+						<p><input type="submit" name="feedbackInput" value="Отправить"></p>
+						</form>
 					</div>
 			</article>
 
